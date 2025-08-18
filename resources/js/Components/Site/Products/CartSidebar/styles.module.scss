@@ -1,0 +1,37 @@
+$closedMarginRight: -315px;
+$openedMarginRight: 0;
+$width: 315px;
+$offset: -15px;
+
+.cartContainer {
+    position: fixed;
+    background-color: #ffffff;
+    right: $offset;
+    top: 0;
+    bottom: 0;
+    z-index: 1301;
+    width: $width;
+    overflow-y: scroll;
+}
+
+.openCart {
+    //width: $left;
+    margin-right: $openedMarginRight;
+    transition: margin-right 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.closeButton {
+    position: absolute;
+    top: 6px;
+    left: 12px;
+}
+
+.closeCart {
+    margin-right: $closedMarginRight;
+    transition: margin-right 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+
+.backdrop {
+    right: calc($width + $offset) !important;
+}

@@ -1,0 +1,13 @@
+.deleteButton {
+    position: absolute !important;
+    top: 6px;
+    right: 6px;
+}
+
+.titleStyle {
+    text-wrap: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+}
