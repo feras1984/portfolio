@@ -1,5 +1,5 @@
 import React from "react";
-import {BaseTextFieldProps} from "@mui/material/TextField/TextField";
+import {BaseTextFieldProps} from "@mui/material/TextField";
 import CustomButton from "@/Components/Button/CustomButton";
 import {Box, TextField} from "@mui/material";
 import CommonService from "@/Services/CommonService/CommonService";

@@ -1,7 +1,7 @@
 import React, {PropsWithChildren} from "react";
 import {useDrag, useDrop} from "react-dnd";
 import {TableRow} from "@mui/material";
-import {TableRowProps} from "@mui/material/TableRow/TableRow";
+import {TableRowProps} from "@mui/material/TableRow";
 
 
 interface ReorderableRowProps extends TableRowProps{

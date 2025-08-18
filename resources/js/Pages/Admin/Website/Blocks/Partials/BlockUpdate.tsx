@@ -13,6 +13,7 @@ import TechnologyUpdate from "@/Pages/Admin/Website/Blocks/Technology/Technology
 import SkillUpdate from "@/Pages/Admin/Website/Blocks/Skills/SkillUpdate";
 import LibraryUpdate from "@/Pages/Admin/Website/Blocks/Libraries/LibraryUpdate";
 import ProjectUpdate from "@/Pages/Admin/Website/Blocks/Projects/ProjectUpdate";
+import Project from "@/models/block/Project";
 
 
 const BlockUpdate = ({category, block}: PageProps<{category: string, block: Block}>) => {
@@ -43,13 +44,13 @@ const BlockUpdate = ({category, block}: PageProps<{category: string, block: Bloc
         }
 
         case BlockCategories.PROJECTS: {
-            UpdateComponent = () => <ProjectUpdate block={block} category={category}></ProjectUpdate>;
+            UpdateComponent = () => <ProjectUpdate block={block as Project} category={category}></ProjectUpdate>;
             break;
         }
 
 
         default: {
-            UpdateComponent = () => <ProjectUpdate block={block} category={category}></ProjectUpdate>
+            UpdateComponent = () => <ProjectUpdate block={block as Project} category={category}></ProjectUpdate>
         }
     }
 

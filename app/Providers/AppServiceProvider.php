@@ -97,6 +97,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton('MenuService', function ($app) {
             return new MenuService();
         });
+
+        $this->app->singleton('ProjectService', function ($app) {
+            return new ProjectService();
+        });
     }
 
     /**

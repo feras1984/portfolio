@@ -6,7 +6,7 @@ import {Container} from "typedi";
 import "reflect-metadata";
 import {Box} from "@mui/material";
 import IButtonProps from "@/Interfaces/IButtonProps";
-import {ButtonProps} from "@mui/material/Button/Button";
+import {ButtonProps} from "@mui/material/Button";
 
 
 

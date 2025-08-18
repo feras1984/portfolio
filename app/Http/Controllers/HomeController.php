@@ -7,6 +7,7 @@ use App\Enums\MenuCategoryEnum;
 use App\Facades\SettingService\LanguageService;
 use App\Facades\WebsiteService\BlockService;
 use App\Facades\WebsiteService\MenuService;
+use App\Facades\WebsiteService\ProjectService;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
 
@@ -29,6 +30,10 @@ class HomeController extends Controller
 
         $logo = 'logo.png';
         $languages = LanguageService::getActiveLanguages();
+        $aboutMe = BlockService::getActiveBlocks(Str::slug(BlockCategoryEnum::ABOUT->value, '-'));
+        $technologies = BlockService::getActiveBlocks(Str::slug(BlockCategoryEnum::TECHNOLOGY->value, '-'));
+        $projects = ProjectService::getActiveBlocks(Str::slug(BlockCategoryEnum::PROJECTS->value, '-'));
+
 //        $homeSlider = BlockService::getActiveBlocks(Str::slug(BlockCategoryEnum::MAIN_SECTION->value, '-'));
 //        $services = BlockService::getActiveBlocks(BlockCategoryEnum::SERVICES);
 //        $clients = BlockService::getActiveBlocks(BlockCategoryEnum::CLIENTS);
@@ -45,6 +50,9 @@ class HomeController extends Controller
             'contactLinks' => $contactLinks,
             'logo' => $logo,
             'languages' => $languages,
+            'aboutMe' => $aboutMe,
+            'technologies' => $technologies,
+            'projects' => $projects,
 //            'mainSliders' => $homeSlider,
 //            'services' => $services,
 //            'clients' => $clients,

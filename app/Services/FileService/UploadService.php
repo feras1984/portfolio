@@ -108,7 +108,8 @@ class UploadService
         return $this->mapFileModel($file);
     }
 
-    public function deleteFile($id, $container = 'uploads') {
+    public function deleteFile(int $id, string $container = 'uploads'): void
+    {
         $file = File::query()->where('id', $id)->first();
         FileService::deleteFile($file->url, $container);
         $file->delete();

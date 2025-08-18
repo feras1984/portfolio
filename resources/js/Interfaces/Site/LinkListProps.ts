@@ -6,7 +6,7 @@ interface LinkListProps {
     socialLinks: MenuLink [],
     footerLinks: MenuLink [],
     contactLinks: MenuLink[],
-    logo: {logo: string},
+    // logo: {logo: string},
     languages: Language [],
 }
 

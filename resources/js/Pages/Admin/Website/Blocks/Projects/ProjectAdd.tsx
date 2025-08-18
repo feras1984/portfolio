@@ -29,15 +29,7 @@ const ProjectAdd: React.FC<{category: string}> = ({category}) => {
     const [chosenSkills, setChosenSkills] = React.useState<number[]>([]);
     const [chosenLibraries, setChosenLibraries] = React.useState<number[]>([]);
     //==========================================================================================
-    // Get the skills:
-    // React.useEffect(() => {
-    //     blockService
-    //         .getActiveBlocks(commonService.toSnakeCase(BlockCategories.SKILLS))
-    //         .then(response => {
-    //             setSkills(response.data);
-    //         })
-    //         .then()
-    // }, [])
+    // Get the skills and libraries:
     React.useEffect(() => {
         async function fetchData() {
             try {
@@ -137,12 +129,10 @@ const ProjectAdd: React.FC<{category: string}> = ({category}) => {
     const handleSkillsChange = (event: SelectChangeEvent<unknown>) => {
         // setChosenSkills(chosenSkills => [...chosenSkills, event.target.value]);
         setChosenSkills(event.target.value as number[]);
-        console.log('chosen skills: ', methods.getValues('skills'));
     }
 
     const handleLibrariesChange = (event: SelectChangeEvent<unknown>) => {
         setChosenLibraries(event.target.value as number[]);
-        console.log('chosen libraries: ', methods.getValues('libraries'));
     }
 
     const getName = (value: number, blocks: Block []) => {

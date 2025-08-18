@@ -46,13 +46,42 @@ class Block extends Model
 
     public function files(): MorphMany
     {
-        return $this->morphMany(File::class, 'reference');
+        return $this->morphMany(File::class, 'reference')->where('is_image', false);
     }
 
     public function images(): MorphMany
     {
         return $this->morphMany(File::class, 'reference')->where('is_image', true);
     }
+
+    public function skills(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            Block::class,
+            ProjectSkill::class,
+            'project_id',
+            'skill_id',
+            'id'
+        );
+    }
+
+    public function libraries(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            Block::class,
+            ProjectLibrary::class,
+            'project_id',
+            'library_id',
+            'id',
+        );
+    }
+
+    public function links(): HasMany
+    {
+        return $this->hasMany(Link::class, 'project_id', 'id');
+    }
+
+
 
 
 //    protected static function newFactory()

@@ -62,6 +62,7 @@ class BlockController extends Controller
     public function show($id) {}
     public function edit(Block $block): \Inertia\Response
     {
+        \request()->merge(['category' => $block->category]);
         $blockModel = BlockService::mapBlockModel($block);
         return Inertia::render('Admin/Website/Blocks/Partials/BlockUpdate', [
             'block' => $blockModel,
@@ -167,7 +168,8 @@ class BlockController extends Controller
     {
         $data = $request->all();
         try {
-            $block = BlockService::updateTranslations($data, $block);
+            $request->merge(['category' => $block->category]);
+            $block = BlockService::mapBlockModel(BlockService::updateTranslations($data, $block));
             return \response()->json($block);
 //            return response()->json([
 //                'status' => 'success',

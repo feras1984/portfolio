@@ -7,18 +7,26 @@ use App\Facades\FileService\UploadService;
 use App\Models\Block;
 use App\Models\BlockTranslation;
 use Carbon\Carbon;
+
+/**
+ * @template T of Block
+ */
 class BlockService
 {
-
-    private string $imageContainer;
-    private string $reference;
+    protected string $imageContainer;
+    protected string $reference;
 
     public function __construct()
     {
         $this->imageContainer = 'block';
         $this->reference = 'App\Models\Block';
     }
-    public function mapBlockModel(Block $block)
+
+    /**
+     * @param T $block
+     * @return array
+     */
+    public function mapBlockModel(Block $block): array
     {
         $translations = $block->translations;
 
@@ -61,6 +69,10 @@ class BlockService
         ];
     }
 
+    /**
+     * @param T $block
+     * @return array
+     */
     public function mapLocaleBlock(Block $block): array
     {
         //TODO: conform URL for each block.
@@ -151,7 +163,7 @@ class BlockService
         return $blockModel;
     }
 
-    private function fillBlockForm(Block &$block) {
+    protected function fillBlockForm(Block &$block) {
         $data = request()->all();
 //        dd(json_decode($data['translations']));
         $block->fill([
@@ -351,7 +363,8 @@ class BlockService
             $translation->update();
         }
 
-        return $this->mapBlockModel($block);
+//        return $this->mapBlockModel($block);
+        return Block::query()->where('id', $block->id)->first();
     }
 
     public function deleteBlock(Block $block) {
@@ -363,6 +376,7 @@ class BlockService
         if(!is_null($block->file)) {
             FileService::deleteFile($block->file, 'block');
         }
+
         foreach ($block->files as $file){
             UploadService::deleteFile($file->id);
         }

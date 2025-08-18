@@ -1,6 +1,5 @@
 import {PropsWithChildren, useEffect, useMemo} from "react";
 import {useAppSelector} from "@/Redux/Store/hook";
-import {dark} from "@mui/material/styles/createPalette";
 import {createTheme, useTheme, ThemeProvider} from "@mui/material";
 import {indigo, pink, purple, lime, green, lightGreen, red, teal} from "@mui/material/colors";
 import {usePage} from "@inertiajs/react";
