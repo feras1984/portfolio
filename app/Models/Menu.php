@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
-use Modules\File\Entities\File;
-use Modules\Website\Database\factories\MenuFactory;
 
 class Menu extends Model
 {
@@ -50,8 +48,8 @@ class Menu extends Model
         return $this->morphOne(File::class, 'reference');
     }
 
-    protected static function newFactory()
-    {
-        return MenuFactory::new();
-    }
+//    protected static function newFactory()
+//    {
+//        return MenuFactory::new();
+//    }
 }

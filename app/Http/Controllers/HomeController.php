@@ -23,10 +23,10 @@ class HomeController extends Controller
 {
     public function index() {
 
-        $mainLinks = MenuService::getActiveLinks(Str::slug(MenuCategoryEnum::MAIN_MENU->value, '-'));
+//        $mainLinks = MenuService::getActiveLinks(Str::slug(MenuCategoryEnum::MAIN_MENU->value, '-'));
         $socialLinks = MenuService::getActiveLinks(Str::slug(MenuCategoryEnum::SOCIAL_MENU->value, '-'));
         $contactLinks = MenuService::getActiveLinks(Str::slug(MenuCategoryEnum::CONTACT_MENU->value, '-'));
-        $footerLinks = MenuService::getActiveLinks(Str::slug(MenuCategoryEnum::FOOTER_MENU->value, '-'));
+//        $footerLinks = MenuService::getActiveLinks(Str::slug(MenuCategoryEnum::FOOTER_MENU->value, '-'));
 
         $logo = 'logo.png';
         $languages = LanguageService::getActiveLanguages();
@@ -44,9 +44,9 @@ class HomeController extends Controller
 //        $articles = BlockService::getActiveBlocks(Str::slug(BlockCategoryEnum::ARTICLES->value));
 //        $industries = BlockService::getActiveBlocks(Str::slug(BlockCategoryEnum::INDUSTRIES->value));
         return Inertia::render('Site/Home', [
-            'mainLinks' => $mainLinks,
+//            'mainLinks' => $mainLinks,
             'socialLinks' => $socialLinks,
-            'footerLinks' => $footerLinks,
+//            'footerLinks' => $footerLinks,
             'contactLinks' => $contactLinks,
             'logo' => $logo,
             'languages' => $languages,

@@ -159,7 +159,7 @@ const ContactLinkUpdate: React.FC<{category: string, menus: Menu [], menu: Menu}
                 setSnackbar(snackbarState =>
                     ({ ...snackbarState, open: true, message: 'Link has been deleted!', severity: "success" })
                 );
-                router.get('/admin/website/get-menu/' + menu.category);
+                router.get('/admin/get-menu/' + menu.category);
             })
             .catch(error => {
                 setSnackbar(snackbarState =>
@@ -183,7 +183,7 @@ const ContactLinkUpdate: React.FC<{category: string, menus: Menu [], menu: Menu}
                         'Update ' + menuService.getMenuName(selectedMenu)
                     }
                 </Typography>
-                <Link href={`/admin/website/get-menu/${category}`}>
+                <Link href={`/admin/get-menu/${category}`}>
                     <Typography variant="h5">
                         Back
                     </Typography>

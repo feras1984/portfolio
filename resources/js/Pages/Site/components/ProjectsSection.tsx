@@ -2,45 +2,47 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/Pages/Site/components/ui/button";
 import { Badge } from "@/Pages/Site/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
+import React from "react";
+import ProjectProps from "@/Interfaces/Site/ProjectProps";
 
-const ProjectsSection = () => {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with Laravel backend and React frontend. Features user authentication, payment processing, and admin dashboard.",
-      technologies: ["Laravel", "React", "MySQL", "Stripe API"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: true
-    },
-    {
-      title: "Task Management App",
-      description: "Collaborative task management application built with Node.js and Angular. Includes real-time updates, team collaboration, and JIRA integration.",
-      technologies: ["Node.js", "Angular", "MongoDB", "Socket.io"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: true
-    },
-    {
-      title: "API Gateway Service",
-      description: "Microservices architecture with automated CI/CD pipeline. Built with Node.js and deployed using Docker containers.",
-      technologies: ["Node.js", "Docker", "GitHub Actions", "AWS"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
-    },
-    {
-      title: "CRM Dashboard",
-      description: "Customer relationship management system with Laravel backend and React frontend. Features analytics, reporting, and customer tracking.",
-      technologies: ["Laravel", "React", "PostgreSQL", "Chart.js"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
-    }
-  ];
+const ProjectsSection: React.FC<{projects: ProjectProps []}> = ({projects}) => {
+  // const projects = [
+  //   {
+  //     title: "E-Commerce Platform",
+  //     description: "Full-stack e-commerce solution with Laravel backend and React frontend. Features user authentication, payment processing, and admin dashboard.",
+  //     technologies: ["Laravel", "React", "MySQL", "Stripe API"],
+  //     githubUrl: "#",
+  //     liveUrl: "#",
+  //     featured: true
+  //   },
+  //   {
+  //     title: "Task Management App",
+  //     description: "Collaborative task management application built with Node.js and Angular. Includes real-time updates, team collaboration, and JIRA integration.",
+  //     technologies: ["Node.js", "Angular", "MongoDB", "Socket.io"],
+  //     githubUrl: "#",
+  //     liveUrl: "#",
+  //     featured: true
+  //   },
+  //   {
+  //     title: "API Gateway Service",
+  //     description: "Microservices architecture with automated CI/CD pipeline. Built with Node.js and deployed using Docker containers.",
+  //     technologies: ["Node.js", "Docker", "GitHub Actions", "AWS"],
+  //     githubUrl: "#",
+  //     liveUrl: "#",
+  //     featured: false
+  //   },
+  //   {
+  //     title: "CRM Dashboard",
+  //     description: "Customer relationship management system with Laravel backend and React frontend. Features analytics, reporting, and customer tracking.",
+  //     technologies: ["Laravel", "React", "PostgreSQL", "Chart.js"],
+  //     githubUrl: "#",
+  //     liveUrl: "#",
+  //     featured: false
+  //   }
+  // ];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="py-20 px-6 bg-background" id="projects">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
@@ -77,45 +79,50 @@ const ProjectsSection = () => {
 
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, techIndex) => (
+                  {project.skills.concat(project.libraries).map((tech, techIndex) => (
                     <Badge
                       key={techIndex}
                       variant="outline"
                       className="bg-primary/5 text-primary border-primary/20 hover:bg-primary/10 transition-colors"
                     >
-                      {tech}
+                      {tech.title}
                     </Badge>
                   ))}
                 </div>
               </CardContent>
 
-              <CardFooter className="flex space-x-3">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="flex items-center space-x-2 hover:text-accent transition-colors"
-                >
-                  <Github className="h-4 w-4" />
-                  <span>Code</span>
-                </Button>
-                <Button
-                  variant="default"
-                  size="sm"
-                  className="flex items-center space-x-2"
-                >
-                  <ExternalLink className="h-4 w-4" />
-                  <span>Live Demo</span>
-                </Button>
-              </CardFooter>
+                <CardFooter className="flex space-x-3">
+                    <a href={project.links.github} target="_blank">
+                        <Button
+                            variant="outline"
+                            size="sm"
+                            className="flex items-center space-x-2 hover:text-accent transition-colors"
+                        >
+                            <Github className="h-4 w-4"/>
+                            <span>Code</span>
+                        </Button>
+                    </a>
+
+                    <a href={project.links.preview} target="_blank">
+                        <Button
+                            variant="default"
+                            size="sm"
+                            className="flex items-center space-x-2"
+                        >
+                            <ExternalLink className="h-4 w-4"/>
+                            <span>Live Demo</span>
+                        </Button>
+                    </a>
+                </CardFooter>
             </Card>
-          ))}
+              ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="outline" className="px-8 py-3 text-lg hover:text-accent transition-colors">
-            View All Projects
-          </Button>
-        </div>
+        {/*<div className="text-center mt-12">*/}
+        {/*  <Button variant="outline" className="px-8 py-3 text-lg hover:text-accent transition-colors">*/}
+        {/*    View All Projects*/}
+        {/*  </Button>*/}
+        {/*</div>*/}
       </div>
     </section>
   );

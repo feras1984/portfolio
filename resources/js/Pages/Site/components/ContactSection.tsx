@@ -1,8 +1,20 @@
 import { Button } from "@/Pages/Site/components/ui/button";
 import { Card } from "@/Pages/Site/components/ui/card";
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Smartphone } from "lucide-react";
+import React from "react";
+import MenuLink from "@/models/Link/MenuLink";
+import CustomLinks from "@/Pages/Site/components/CustomLinks";
 
-const ContactSection = () => {
+const ContactSection: React.FC<{socialLinks: MenuLink [], contactLinks: MenuLink []}> = ({socialLinks, contactLinks}) => {
+    const mail = contactLinks.find(item => item.slug.includes("mail"));
+    const phone = contactLinks.find(item => item.slug.includes("mobile"));
+    const handleLink = (link: MenuLink | undefined) => {
+        if (link !== undefined) {
+            const url = link.url.split(':');
+            return url[url.length - 1];
+        } else return '';
+
+    }
   return (
     <section className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
@@ -27,19 +39,19 @@ const ContactSection = () => {
                 <div>
                   <p className="font-medium text-foreground">Email</p>
                   <p className="text-muted-foreground group-hover:text-accent transition-colors">
-                    your.email@example.com
+                      {handleLink(mail)}
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4 group cursor-pointer">
                 <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                  <MapPin className="h-5 w-5 text-primary" />
+                  <Smartphone className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Location</p>
+                  <p className="font-medium text-foreground">Mobile</p>
                   <p className="text-muted-foreground group-hover:text-accent transition-colors">
-                    Available for remote work
+                      {handleLink(phone)}
                   </p>
                 </div>
               </div>
@@ -47,17 +59,18 @@ const ContactSection = () => {
 
             <div className="mt-8 pt-6 border-t border-border">
               <p className="text-sm text-muted-foreground mb-4">Connect with me</p>
-              <div className="flex space-x-3">
-                <Button variant="outline" size="icon" className="hover:text-accent transition-colors">
-                  <Github className="h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="icon" className="hover:text-accent transition-colors">
-                  <Linkedin className="h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="icon" className="hover:text-accent transition-colors">
-                  <Mail className="h-4 w-4" />
-                </Button>
-              </div>
+              {/*<div className="flex space-x-3">*/}
+              {/*  <Button variant="outline" size="icon" className="hover:text-accent transition-colors">*/}
+              {/*    <Github className="h-4 w-4" />*/}
+              {/*  </Button>*/}
+              {/*  <Button variant="outline" size="icon" className="hover:text-accent transition-colors">*/}
+              {/*    <Linkedin className="h-4 w-4" />*/}
+              {/*  </Button>*/}
+              {/*  <Button variant="outline" size="icon" className="hover:text-accent transition-colors">*/}
+              {/*    <Mail className="h-4 w-4" />*/}
+              {/*  </Button>*/}
+              {/*</div>*/}
+                <CustomLinks socialLinks={socialLinks} contactLinks={contactLinks}></CustomLinks>
             </div>
           </Card>
 

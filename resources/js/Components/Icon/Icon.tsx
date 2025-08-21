@@ -87,6 +87,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import GppGoodIcon from '@mui/icons-material/GppGood';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 interface IconProps{
     name: string;
@@ -104,6 +105,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import {Link} from "@inertiajs/react";
 import {IconBaseProps} from "react-icons/lib/cjs/iconBase";
 import CloseIcon from "@mui/icons-material/Close";
+import {Github, Linkedin, Mail, Smartphone} from "lucide-react";
 const Icon: React.FC<IconProps> = ({name, color = '', size = 36, sizeSmall = 24}) => {
     // const size = 36;
     // const sizeSmall = 24;
@@ -126,6 +128,10 @@ const Icon: React.FC<IconProps> = ({name, color = '', size = 36, sizeSmall = 24}
                 <IconContext.Provider value={{ className: styles.linkedinColor }}>
                     <FaLinkedinIn size={sizeSmall}></FaLinkedinIn>
                 </IconContext.Provider>
+            );
+        case 'linkedin2':
+            return (
+                <Linkedin className="h-5 w-5" />
             );
         case 'twitter':
             return (
@@ -160,9 +166,24 @@ const Icon: React.FC<IconProps> = ({name, color = '', size = 36, sizeSmall = 24}
                 <WhatsAppIcon></WhatsAppIcon>
             );
 
+        case 'github':
+            return (
+                <GitHubIcon></GitHubIcon>
+            );
+
+        case 'github2':
+            return (
+                <Github className="h-5 w-5" />
+            );
+
         case 'phone':
             return (
                 <FaMobileScreen></FaMobileScreen>
+            );
+
+        case 'phone2':
+            return (
+                <Smartphone className="h-5 w-5"/>
             );
 
         case 'local-phone':
@@ -173,6 +194,11 @@ const Icon: React.FC<IconProps> = ({name, color = '', size = 36, sizeSmall = 24}
         case 'mail-mui':
             return (
                 <EmailIcon></EmailIcon>
+            );
+
+        case 'mail2':
+            return (
+                <Mail className="h-5 w-5" />
             );
 
         case 'fax':

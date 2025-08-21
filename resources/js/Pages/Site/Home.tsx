@@ -49,21 +49,17 @@ const Home:React.FC<HomeProps> = ({
     const mainSliderRef = React.useRef<HTMLDivElement>(null);
     const aboutRef = React.useRef<HTMLDivElement>(null);
 
-    console.log(aboutMe, technologies, projects);
-
     return(
         <Box>
             <Head title={'Home'}></Head>
             <div className="min-h-screen">
-                <HeroSection/>
-                <SkillsSection/>
-                <AboutSection/>
-                <ProjectsSection/>
-                <ContactSection/>
+                <HeroSection socialLinks={socialLinks} contactLinks={contactLinks}/>
+                <SkillsSection technologies={technologies}/>
+                <AboutSection aboutMe={aboutMe[0]}/>
+                <ProjectsSection projects={projects}/>
+                <ContactSection socialLinks={socialLinks} contactLinks={contactLinks}/>
             </div>
         </Box>
-
-
     );
 }
 export default Home;

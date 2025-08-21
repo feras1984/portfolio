@@ -5,7 +5,7 @@ import {MenuGridProps} from "../../Interfaces";
 
 const EditButton = (props: MenuGridProps) => {
     return (
-        <Link href={`/admin/website/menu/details/${props.id}`}>
+        <Link href={`/admin/menu/details/${props.id}`}>
             <CustomButton task='display' text=""></CustomButton>
         </Link>
     );

@@ -106,7 +106,6 @@ const SocialLinkAdd: React.FC<{category: string, menus: Menu []}> = ({category, 
     }
 
     const onSubmit = () => {
-        console.log('HERE!');
         const formData = new FormData();
         const target = methods.getValues('target') ? '_blank' : '_self';
         formData.append('parentId', String(methods.getValues('parent')));
@@ -152,7 +151,7 @@ const SocialLinkAdd: React.FC<{category: string, menus: Menu []}> = ({category, 
                     }
 
                 </Typography>
-                <Link href={`/admin/website/get-menu/${category}`}>
+                <Link href={`/admin/get-menu/${category}`}>
                     <Typography variant="h5">
                         Back
                     </Typography>

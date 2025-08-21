@@ -190,6 +190,10 @@ class BlockService {
             `/api/get-blocks/${category}`,
         )
     }
+
+    getSVGImage = (url: string) => {
+        return axios.get<string>(`/file/blocks/${url}`);
+    }
 }
 
 export default BlockService;

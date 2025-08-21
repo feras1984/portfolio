@@ -93,7 +93,7 @@ class MenuService {
 
     storeMenu = (formData: FormData) => {
         return axios.post(
-            '/admin/website/menu',
+            '/admin/menu',
             formData,
             {
                 headers: {
@@ -105,7 +105,7 @@ class MenuService {
 
     updateMenu= (formData: FormData, id: number) : Promise<AxiosResponse<Menu>> => {
         return axios.post(
-            '/admin/website/menu/' + id + '?_method=PATCH',
+            '/admin/menu/' + id + '?_method=PATCH',
             formData,
             {
                 headers: {
@@ -117,7 +117,7 @@ class MenuService {
 
     menuActivation = (formData: FormData, id: number): Promise<AxiosResponse<Menu>> => {
         return axios.post(
-            '/admin/website/menu/activation/' + id + '?_method=PATCH',
+            '/admin/menu/activation/' + id + '?_method=PATCH',
             formData,
             {
                 headers: {
@@ -129,7 +129,7 @@ class MenuService {
 
     updateFile = (formData: FormData, id: number) : Promise<AxiosResponse<Menu>> => {
         return axios.post(
-            '/admin/website/menu/upload/file/' + id + '?_method=PATCH',
+            '/admin/menu/upload/file/' + id + '?_method=PATCH',
             formData,
             {
                 headers: {
@@ -141,7 +141,7 @@ class MenuService {
 
     deleteMenu= (id: number) => {
         return axios.post(
-            '/admin/website/menu/' + id + '?_method=DELETE',
+            '/admin/menu/' + id + '?_method=DELETE',
             {},
             {
                 headers: {
@@ -153,7 +153,7 @@ class MenuService {
 
     reorder = (formData: FormData) => {
         return axios.post(
-            '/admin/website/menu/reorder',
+            '/admin/menu/reorder',
             formData,
             {
                 headers: {

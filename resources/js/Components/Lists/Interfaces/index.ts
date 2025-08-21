@@ -33,4 +33,3 @@ export {
     type MenuGridProps,
 }
 
-export default ListProps;

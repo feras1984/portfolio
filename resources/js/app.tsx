@@ -12,7 +12,6 @@ import {AdapterDateFns} from "@mui/x-date-pickers/AdapterDateFns";
 import '@/Locale/i18n';
 import { registerLicense } from '@syncfusion/ej2-base';
 import {LanguageHandlerProvider} from "@/Contexts/LanguageHandlerContext/LanguageHandlerContext";
-import {CartHandlerProvider} from "@/Contexts/CartHandlerContext/CartHandlerContext";
 
 const appName = import.meta.env.VITE_APP_NAME || 'Feras Protfolio';
 
@@ -26,9 +25,7 @@ createInertiaApp({
                 <Provider store={store}>
                     <LocalizationProvider dateAdapter={AdapterDateFns}>
                         <LanguageHandlerProvider value={{lang: props.initialPage.props?.lang as string || 'en'}}>
-                            <CartHandlerProvider>
-                                <App {...props} />
-                            </CartHandlerProvider>
+                            <App {...props} />
                         </LanguageHandlerProvider>
                     </LocalizationProvider>
                 </Provider>

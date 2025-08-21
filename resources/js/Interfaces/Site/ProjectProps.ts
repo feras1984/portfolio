@@ -5,6 +5,7 @@ interface ProjectProps extends BlockProps {
     links: ProjectLink;
     skills: BlockProps [];
     libraries: BlockProps [];
+    featured: boolean;
 }
 
 export default ProjectProps;

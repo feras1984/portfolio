@@ -1,8 +1,13 @@
 import { Button } from "@/Pages/Site/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Smartphone } from "lucide-react";
+import MenuLink from "@/models/Link/MenuLink";
+import CustomIcon from "@/Components/Icon/Icon";
+import React from "react";
+import CustomLinks from "@/Pages/Site/components/CustomLinks";
 
-const HeroSection = () => {
-  return (
+const HeroSection: React.FC<{socialLinks: MenuLink [], contactLinks: MenuLink []}> = ({socialLinks, contactLinks}) => {
+
+    return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-subtle px-6">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8 animate-fade-in">
@@ -25,22 +30,15 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-2">
-          <Button variant="hero" size="lg" className="group">
-            View My Work
-            <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-          </Button>
+            <a href="#projects">
+                <Button variant="hero" size="lg" className="group">
+                    View My Work
+                    <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                </Button>
+            </a>
+            <CustomLinks contactLinks={socialLinks} socialLinks={contactLinks}></CustomLinks>
 
-          <div className="flex gap-4">
-            <Button variant="ghost" size="icon" className="hover:text-accent transition-colors">
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-accent transition-colors">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-accent transition-colors">
-              <Mail className="h-5 w-5" />
-            </Button>
-          </div>
+
         </div>
       </div>
     </section>

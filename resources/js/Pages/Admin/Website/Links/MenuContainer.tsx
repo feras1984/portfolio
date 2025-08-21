@@ -27,7 +27,7 @@ const MenuContainer = ({category, menus}: PageProps<{category: string, menus: Me
                     alignItems="center"
                     spacing={2}
                 >
-                    <Link href={`/admin/website/menu/create/${category}`}>
+                    <Link href={`/admin/menu/create/${category}`}>
                         <CustomButton task='add' text={getTitle()}></CustomButton>
                     </Link>
 

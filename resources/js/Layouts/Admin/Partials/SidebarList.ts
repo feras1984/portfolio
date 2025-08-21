@@ -56,6 +56,20 @@ const SidebarList: CustomTab [] = [
         children: [],
     },
 
+    {
+        name: MenuCategories.SOCIAL_MENU,
+        icon: 'social-menu',
+        link: '/admin/get-menu/' + commonService.toSnakeCase(MenuCategories.SOCIAL_MENU),
+        children: [],
+    },
+
+    {
+        name: MenuCategories.CONTACT_MENU,
+        icon: 'contact-menu',
+        link: '/admin/get-menu/' + commonService.toSnakeCase(MenuCategories.CONTACT_MENU),
+        children: [],
+    },
+
     // {
     //     name: 'Settings',
     //     icon: 'settings',

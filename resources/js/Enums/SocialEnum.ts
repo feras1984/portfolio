@@ -7,6 +7,7 @@ enum SocialEnum {
     Tiktok = 'tiktok',
     Youtube = 'youtube',
     Snapchat = 'snapchat',
+    Github = 'github',
 }
 
 export default SocialEnum;

@@ -165,11 +165,11 @@ const MenuReorder: React.FC<{category: string, menu: Menu []}> = ({category, men
                 </Stack>
             </Box>
             <Grid container spacing={2} justifyContent="center" alignItems="center">
-                <Grid item>
+                <Grid>
                     <Typography>Old List</Typography>
                     {customList(left)}
                 </Grid>
-                <Grid item>
+                <Grid>
                     <Grid container direction="column" alignItems="center">
                         <IconButton
                             sx={{ my: 0.5 }}
@@ -209,7 +209,7 @@ const MenuReorder: React.FC<{category: string, menu: Menu []}> = ({category, men
                         </IconButton>
                     </Grid>
                 </Grid>
-                <Grid item>
+                <Grid>
                     <Typography>New List</Typography>
                     {customList(right)}
                 </Grid>

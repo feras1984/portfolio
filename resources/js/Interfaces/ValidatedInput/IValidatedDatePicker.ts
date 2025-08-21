@@ -1,7 +1,7 @@
-import {DatePickerProps, DatePickerSlotsComponentsProps} from "@mui/x-date-pickers/DatePicker/DatePicker.types";
+import {DatePickerProps} from "@mui/x-date-pickers/DatePicker";
 import {FieldValues, UseFormReturn} from "react-hook-form";
 
-interface IValidatedDatePicker<T extends FieldValues> extends DatePickerProps<T>{
+interface IValidatedDatePicker<T extends FieldValues> extends DatePickerProps<true>{
     methods: UseFormReturn<T, any>,
     controlName: string;
     label: string,

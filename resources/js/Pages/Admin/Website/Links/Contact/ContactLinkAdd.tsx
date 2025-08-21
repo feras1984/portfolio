@@ -148,7 +148,7 @@ const ContactLink: React.FC<{category: string, menus: Menu []}> = ({category, me
                     }
 
                 </Typography>
-                <Link href={`/admin/website/get-menu/${category}`}>
+                <Link href={`/admin/get-menu/${category}`}>
                     <Typography variant="h5">
                         Back
                     </Typography>

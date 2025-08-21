@@ -159,7 +159,7 @@ const SocialLinkUpdate: React.FC<{category: string, menus: Menu [], menu: Menu}>
                 setSnackbar(snackbarState =>
                     ({ ...snackbarState, open: true, message: 'Link has been deleted!', severity: "success" })
                 );
-                router.get('/admin/website/get-menu/' + menu.category);
+                router.get('/admin/get-menu/' + menu.category);
             })
             .catch(error => {
                 setSnackbar(snackbarState =>
@@ -185,7 +185,7 @@ const SocialLinkUpdate: React.FC<{category: string, menus: Menu [], menu: Menu}>
                     }
 
                 </Typography>
-                <Link href={`/admin/website/get-menu/${category}`}>
+                <Link href={`/admin/get-menu/${category}`}>
                     <Typography variant="h5">
                         Back
                     </Typography>

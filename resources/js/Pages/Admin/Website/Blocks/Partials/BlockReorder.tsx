@@ -4,7 +4,6 @@ import {Container} from "typedi";
 import "reflect-metadata";
 import BlockService from "@/Services/BlockService/BlockService";
 import {
-    Grid,
     Paper,
     Box,
     List,
@@ -17,6 +16,7 @@ import {
     Typography, Stack,
     IconButton,
 } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import {Head, Link} from "@inertiajs/react";
 import AdminLayout from "@/Layouts/Admin/AdminLayout";
 import CommonService from "@/Services/CommonService/CommonService";
@@ -164,11 +164,11 @@ const BlockReorder: React.FC<{category: string, blocks: Block []}> = ({category,
                 </Stack>
             </Box>
             <Grid container spacing={2} justifyContent="center" alignItems="center">
-                <Grid item>
+                <Grid>
                     <Typography>Old List</Typography>
                     {customList(left)}
                 </Grid>
-                <Grid item>
+                <Grid>
                     <Grid container direction="column" alignItems="center">
                         <IconButton
                             sx={{ my: 0.5 }}
@@ -208,7 +208,7 @@ const BlockReorder: React.FC<{category: string, blocks: Block []}> = ({category,
                         </IconButton>
                     </Grid>
                 </Grid>
-                <Grid item>
+                <Grid>
                     <Typography>New List</Typography>
                     {customList(right)}
                 </Grid>
