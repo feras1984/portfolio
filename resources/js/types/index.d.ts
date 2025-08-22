@@ -52,4 +52,6 @@ export type PageProps<T extends Record<string, unknown> = Record<string, unknown
     };
 
     lang: string;
+
+    csrf_token: string;
 };

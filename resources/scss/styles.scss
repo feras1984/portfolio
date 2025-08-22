@@ -19,6 +19,7 @@
 
     --clr-bg-grid-dark: #0f172a;
     --clr-bg-grid-light: #e2e8f0;
+    //--ring: 262, 83%, 58%;
 
 
     [type='text']:focus, input:where(:not([type])):focus, [type='email']:focus,
@@ -27,6 +28,8 @@
     [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus,
     [multiple]:focus, textarea:focus, select:focus {
         box-shadow: none !important;
+        border-color: hsl(var(--ring));
+        border-width: 2px;
     }
 
 //    Site:

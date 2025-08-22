@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Middleware\Language;
 use Illuminate\Foundation\Application;
@@ -37,5 +38,7 @@ Route::middleware(Language::class)->group(function () {
 //    Route::get('/block/{category}', [BlockController::class, 'index']);
 //    Route::get('/block/details/{category}/{block}', [BlockController::class, 'show']);
 });
+
+Route::post('/send-email', [NotificationController::class, 'sendUserEmail']);
 
 require __DIR__.'/file.web.php';

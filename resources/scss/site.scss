@@ -50,3 +50,7 @@
     width: 1.6rem !important;
     height: 1.6rem !important;
 }
+
+//input:where(:not([type])):focus, [type='email']:focus, textarea:focus {
+//    border-color: transparent !important;
+//}

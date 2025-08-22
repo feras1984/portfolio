@@ -11,7 +11,7 @@ type EmailResponseMessage = {
 class EmailService {
     sendEmail = (formData: FormData): Promise<AxiosResponse<EmailResponseMessage>> => {
         return axios.post(
-            '/notification/send-email',
+            '/send-email',
             formData,
             {
                 headers: {
