@@ -1,0 +1,28 @@
+{
+    "translation": {
+        "tera": "تيرا للدعاية والإعلان",
+        "our-services": "خدماتنا",
+        "our-clients": "عملاؤنا",
+        "gallery": "ألبوم الصور",
+        "our-missions": "رسالتنا",
+        "about-us": "من نحن",
+        "contact-us": "تواصل معنا",
+        "name": "الاسم",
+        "email": "الايميل",
+        "message": "الرسالة",
+        "your-message": "رسالتك",
+        "send": "أرسل",
+        "name-is-required": "حقل الاسم مطلوب",
+        "invalid-email": "صيغة الإيميل غير صالحة",
+        "minimum-length": "الطول الأقصر هو {{length}}",
+        "maximum-length": "الحجم الأكبر للرسالة {{length}}",
+        "subject": "الموضوع",
+        "all-rights-reserved": "جميع الحقوق محفوظة",
+        "see-what-we-can-do": "ماذا يمكننا أن نقدم؟",
+        "more": "المزيد",
+        "asas": "مـجـمـوعة اساس للتدقيق والاستشارات الضريبية والمحاسبية",
+        "industries": "المجالات",
+        "news": "الأخبار",
+        "articles": "المقالات"
+    }
+}

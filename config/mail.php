@@ -111,8 +111,18 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'info@ferasmasoud.com'),
+        'name' => env('MAIL_FROM_NAME', 'Portfolio'),
+    ],
+
+    'contact-receiver' => [
+        'address' => env('MAIL_CONTACT_RECEIVER_ADDRESS', 'info@ferasmasoud.com'),
+        'name' => env('MAIL_FROM_NAME', 'Portfolio'),
+    ],
+
+    'from-no-reply' => [
+        'address' => env('MAIL_NO_REPLY_ADDRESS', 'info@ferasmasoud.com'),
+        'name' => env('MAIL_FROM_NAME', 'Portfolio'),
     ],
 
 ];

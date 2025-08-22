@@ -1,0 +1,28 @@
+{
+    "translation": {
+        "tera": "TERA MEDIA SOLUTION",
+        "our-services": "Our Services",
+        "our-clients": "Our Clients",
+        "gallery": "Gallery",
+        "our-missions": "Our Mission",
+        "about-us": "About Us",
+        "contact-us": "Contact Us",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "your-message": "Your Message",
+        "send": "Send",
+        "name-is-required": "Name is Required",
+        "invalid-email": "Invalid Email Form",
+        "minimum-length": "Minimum Length is {{length}}",
+        "maximum-length": "Maximum Length is {{length}}",
+        "subject": "Subject",
+        "all-rights-reserved": "All Rights Reserved",
+        "see-what-we-can-do": "See What We Can Do",
+        "more": "Read More",
+        "asas": "ASAS Group for auditing, tax, and accounting consulting",
+        "industries": "Industries",
+        "news": "News",
+        "articles": "Articles"
+    }
+}
