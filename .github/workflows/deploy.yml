@@ -28,11 +28,11 @@ jobs:
 #      - name: Install PHP dependencies
 #        run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
-      - name: Install JS dependencies
-        run: npm install --legacy-peer-deps
-
-      - name: Build React frontend
-        run: npm run build
+#      - name: Install JS dependencies
+#        run: npm install --legacy-peer-deps
+#
+#      - name: Build React frontend
+#        run: npm run build
 
 #      - name: Run PHP Tests
 #        run: ./vendor/bin/phpunit
