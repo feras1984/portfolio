@@ -179,8 +179,8 @@ const ProjectsSection: React.FC<{projects: ProjectProps []}> = ({projects}) => {
                           {project.title}
                       </CardTitle>
 
-                      <CardDescription className="text-muted-foreground leading-relaxed mb-4">
-                          {project.description}
+                      <CardDescription className="text-muted-foreground leading-relaxed mb-4"
+                                       dangerouslySetInnerHTML={{__html: project.description}}>
                       </CardDescription>
 
                       {/* Technologies */}
