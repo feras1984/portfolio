@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39d6efff-c51e-4550-b22c-2709828e79cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Site/components/ContactSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Site/components/ContactSection.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="39d6efff-c51e-4550-b22c-2709828e79cf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -246,7 +244,7 @@
       <workItem from="1755958940004" duration="5327000" />
       <workItem from="1755966467656" duration="5579000" />
       <workItem from="1756036237984" duration="2918000" />
-      <workItem from="1756051889359" duration="5417000" />
+      <workItem from="1756051889359" duration="5803000" />
     </task>
     <servers />
   </component>
