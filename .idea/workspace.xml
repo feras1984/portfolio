@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39d6efff-c51e-4550-b22c-2709828e79cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/WebsiteService/ProjectService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/WebsiteService/ProjectService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/Auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/Auth/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/Website/Blocks/Projects/ProjectAdd.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/Website/Blocks/Projects/ProjectAdd.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/Website/Blocks/Projects/ProjectUpdate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/Website/Blocks/Projects/ProjectUpdate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Site/components/ProjectsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Site/components/ProjectsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Site/components/ContactSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Site/components/ContactSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +183,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "sprint",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/PROJECTS/STORE",
+    "last_opened_file_path": "D:/PROJECTS/Portfolio/portfolio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -251,6 +246,7 @@
       <workItem from="1755958940004" duration="5327000" />
       <workItem from="1755966467656" duration="5579000" />
       <workItem from="1756036237984" duration="2918000" />
+      <workItem from="1756051889359" duration="5417000" />
     </task>
     <servers />
   </component>

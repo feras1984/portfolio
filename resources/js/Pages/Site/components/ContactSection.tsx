@@ -59,7 +59,7 @@ const ContactSection: React.FC<{socialLinks: MenuLink [], contactLinks: MenuLink
 
             <div className="mt-8 pt-6 border-t border-border">
               <p className="text-sm text-muted-foreground mb-4">Connect with me</p>
-                {/*<CustomLinks socialLinks={socialLinks} contactLinks={contactLinks}></CustomLinks>*/}
+                <CustomLinks socialLinks={socialLinks} contactLinks={contactLinks}></CustomLinks>
             </div>
           </Card>
 
