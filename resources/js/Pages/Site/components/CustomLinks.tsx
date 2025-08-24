@@ -8,8 +8,9 @@ const CustomLinks: React.FC<{socialLinks: MenuLink [], contactLinks: MenuLink []
 
     const github = socialLinks.find(item => item.name.toLowerCase() === "github");
     const linkedin = socialLinks.find(item => item.name.toLowerCase() === "linkedin");
-    const mail = contactLinks.find(item => item.name.toLowerCase() === "mail");
+    const mail = contactLinks.find(item => item.name.toLowerCase() === "email");
     const phone = contactLinks.find(item => item.name.toLowerCase() === "mobile");
+    console.log(contactLinks);
 
     return (
         <div className="flex gap-4">
