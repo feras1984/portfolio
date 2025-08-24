@@ -20,10 +20,10 @@ jobs:
           extensions: mbstring, bcmath, pdo, curl
           tools: composer
 
-#      - name: Setup Node
-#        uses: actions/setup-node@v3
-#        with:
-#          node-version: '22.10.0'
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.10.0'
 
 #      - name: Install PHP dependencies
 #        run: composer install --no-interaction --prefer-dist --optimize-autoloader
