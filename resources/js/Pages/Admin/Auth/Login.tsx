@@ -18,11 +18,11 @@ const Login = ({ status, canResetPassword }: PageProps<{ status?: string, canRes
                             component="div"
                             className="p-2 flex justify-center items-center"
                         >
-                            <Box
-                                className="px-2"
-                            >
-                                <img src={logo} alt="LOGO" className={styles.logoImg} />
-                            </Box>
+                            {/*<Box*/}
+                            {/*    className="px-2"*/}
+                            {/*>*/}
+                            {/*    <img src={logo} alt="LOGO" className={styles.logoImg} />*/}
+                            {/*</Box>*/}
 
                             <Typography variant="h5"><strong>Log In</strong></Typography>
                         </Box>

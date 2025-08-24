@@ -126,7 +126,7 @@ class ProjectService extends BlockService
         $links = new Link();
         $links->fill([
             'project_id' => $projectId,
-            'github_url' => $data['github'],
+            'github_url' => $data['github'] ?? '',
             'preview_url' => $data['preview'],
         ]);
         $links->save();
@@ -171,7 +171,7 @@ class ProjectService extends BlockService
         $link = $block->links()->where('project_id', $block->id)->first();
         if (!is_null($link)) {
             $link->fill([
-                'github_url' => $data['github'],
+                'github_url' => $data['github'] ?? '',
                 'preview_url' => $data['preview'],
             ]);
             $link->update();

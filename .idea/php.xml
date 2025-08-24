@@ -1,38 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+  <component name="LaravelPint">
+    <laravel_pint_settings>
+      <LaravelPintConfiguration tool_path="$PROJECT_DIR$/vendor/bin/pint" />
+    </laravel_pint_settings>
   </component>
-  <component name="ChangeListManager">
-    <list default="true" id="39d6efff-c51e-4550-b22c-2709828e79cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/WebsiteService/ProjectService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/WebsiteService/ProjectService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/Auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/Auth/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/Website/Blocks/Projects/ProjectAdd.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/Website/Blocks/Projects/ProjectAdd.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/Website/Blocks/Projects/ProjectUpdate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/Website/Blocks/Projects/ProjectUpdate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Site/components/ProjectsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Site/components/ProjectsSection.tsx" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
-      </list>
-    </option>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
+  <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
@@ -170,102 +153,11 @@
       <path value="$PROJECT_DIR$/vendor/predis/predis" />
     </include_path>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="31GhMkM5CAxiSI8ovMbe4tpgsKJ" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sprint",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/PROJECTS/STORE",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "ts.external.directory.path": "D:\\PROJECTS\\Portfolio\\portfolio\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PROJECTS\Portfolio\portfolio\resources\views" />
-      <recent name="D:\PROJECTS\Portfolio\portfolio\app" />
-      <recent name="D:\PROJECTS\Portfolio\portfolio\resources\scss" />
-      <recent name="D:\PROJECTS\Portfolio\portfolio\resources\js\Pages\Site" />
-      <recent name="D:\PROJECTS\Portfolio\portfolio\resources\js\Interfaces\Site" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Pest.Main">
-    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Main" type="PestRunConfigurationType">
-      <option name="pestRunnerSettings">
-        <PestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
-      </option>
-      <method v="2" />
-    </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PS-243.22562.233" />
-        <option value="bundled-php-predefined-a98d8de5180a-7980c7aaca61-com.jetbrains.php.sharedIndexes-PS-243.22562.233" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="39d6efff-c51e-4550-b22c-2709828e79cf" name="Changes" comment="" />
-      <created>1755156270599</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1755156270599</updated>
-      <workItem from="1755156274492" duration="15070000" />
-      <workItem from="1755285320348" duration="3210000" />
-      <workItem from="1755421421902" duration="15342000" />
-      <workItem from="1755462043811" duration="6233000" />
-      <workItem from="1755518138915" duration="2906000" />
-      <workItem from="1755521114116" duration="17176000" />
-      <workItem from="1755549126470" duration="6125000" />
-      <workItem from="1755556063481" duration="1796000" />
-      <workItem from="1755617841329" duration="10389000" />
-      <workItem from="1755794105926" duration="20460000" />
-      <workItem from="1755830172450" duration="3596000" />
-      <workItem from="1755839491012" duration="1454000" />
-      <workItem from="1755958940004" duration="5327000" />
-      <workItem from="1755966467656" duration="5579000" />
-      <workItem from="1756036237984" duration="2918000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
 </project>
