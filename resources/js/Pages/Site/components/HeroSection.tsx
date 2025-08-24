@@ -36,9 +36,7 @@ const HeroSection: React.FC<{socialLinks: MenuLink [], contactLinks: MenuLink []
                     <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </Button>
             </a>
-            <CustomLinks contactLinks={socialLinks} socialLinks={contactLinks}></CustomLinks>
-
-
+            <CustomLinks socialLinks={socialLinks} contactLinks={contactLinks}></CustomLinks>
         </div>
       </div>
     </section>
