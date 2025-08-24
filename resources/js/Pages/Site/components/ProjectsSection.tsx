@@ -6,40 +6,6 @@ import React from "react";
 import ProjectProps from "@/Interfaces/Site/ProjectProps";
 
 const ProjectsSection: React.FC<{projects: ProjectProps []}> = ({projects}) => {
-  // const projects = [
-  //   {
-  //     title: "E-Commerce Platform",
-  //     description: "Full-stack e-commerce solution with Laravel backend and React frontend. Features user authentication, payment processing, and admin dashboard.",
-  //     technologies: ["Laravel", "React", "MySQL", "Stripe API"],
-  //     githubUrl: "#",
-  //     liveUrl: "#",
-  //     featured: true
-  //   },
-  //   {
-  //     title: "Task Management App",
-  //     description: "Collaborative task management application built with Node.js and Angular. Includes real-time updates, team collaboration, and JIRA integration.",
-  //     technologies: ["Node.js", "Angular", "MongoDB", "Socket.io"],
-  //     githubUrl: "#",
-  //     liveUrl: "#",
-  //     featured: true
-  //   },
-  //   {
-  //     title: "API Gateway Service",
-  //     description: "Microservices architecture with automated CI/CD pipeline. Built with Node.js and deployed using Docker containers.",
-  //     technologies: ["Node.js", "Docker", "GitHub Actions", "AWS"],
-  //     githubUrl: "#",
-  //     liveUrl: "#",
-  //     featured: false
-  //   },
-  //   {
-  //     title: "CRM Dashboard",
-  //     description: "Customer relationship management system with Laravel backend and React frontend. Features analytics, reporting, and customer tracking.",
-  //     technologies: ["Laravel", "React", "PostgreSQL", "Chart.js"],
-  //     githubUrl: "#",
-  //     liveUrl: "#",
-  //     featured: false
-  //   }
-  // ];
 
   return (
     <section className="py-20 px-6 bg-background" id="projects">
@@ -55,66 +21,6 @@ const ProjectsSection: React.FC<{projects: ProjectProps []}> = ({projects}) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            // <Card
-            //   key={index}
-            //   className={`bg-card border-border shadow-card hover:shadow-glow transition-all duration-300 ${
-            //     project.featured ? 'md:col-span-1' : ''
-            //   }`}
-            // >
-            //   <CardHeader>
-            //     <div className="flex justify-between items-start mb-2">
-            //       <CardTitle className="text-xl font-semibold text-foreground">
-            //         {project.title}
-            //       </CardTitle>
-            //       {project.featured && (
-            //         <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/30">
-            //           Featured
-            //         </Badge>
-            //       )}
-            //     </div>
-            //     <CardDescription className="text-muted-foreground leading-relaxed">
-            //       {project.description}
-            //     </CardDescription>
-            //   </CardHeader>
-            //
-            //   <CardContent>
-            //     <div className="flex flex-wrap gap-2">
-            //       {project.skills.concat(project.libraries).map((tech, techIndex) => (
-            //         <Badge
-            //           key={techIndex}
-            //           variant="outline"
-            //           className="bg-primary/5 text-primary border-primary/20 hover:bg-primary/10 transition-colors"
-            //         >
-            //           {tech.title}
-            //         </Badge>
-            //       ))}
-            //     </div>
-            //   </CardContent>
-            //
-            //     <CardFooter className="flex space-x-3">
-            //         <a href={project.links.github} target="_blank">
-            //             <Button
-            //                 variant="outline"
-            //                 size="sm"
-            //                 className="flex items-center space-x-2 hover:text-accent transition-colors"
-            //             >
-            //                 <Github className="h-4 w-4"/>
-            //                 <span>Code</span>
-            //             </Button>
-            //         </a>
-            //
-            //         <a href={project.links.preview} target="_blank">
-            //             <Button
-            //                 variant="default"
-            //                 size="sm"
-            //                 className="flex items-center space-x-2"
-            //             >
-            //                 <ExternalLink className="h-4 w-4"/>
-            //                 <span>Live Demo</span>
-            //             </Button>
-            //         </a>
-            //     </CardFooter>
-            // </Card>
               <Card
                   key={index}
                   className={`relative overflow-hidden bg-card border-border shadow-card group cursor-pointer
@@ -137,7 +43,7 @@ const ProjectsSection: React.FC<{projects: ProjectProps []}> = ({projects}) => {
                               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                               {/*<p className="text-sm mb-4 opacity-90">{project.timeline} • {project.team}</p>*/}
                               <div className="flex justify-center space-x-3">
-                                  <a href={project.links.github} target="_blank">
+                                  {project.links.github.length > 0 && <a href={project.links.github} target="_blank">
                                       <Button
                                           variant="secondary"
                                           size="sm"
@@ -146,7 +52,7 @@ const ProjectsSection: React.FC<{projects: ProjectProps []}> = ({projects}) => {
                                           <Github className="h-3 w-3 mr-2"/>
                                           Code
                                       </Button>
-                                  </a>
+                                  </a>}
 
                                   <a href={project.links.preview} target="_blank">
                                       <Button
@@ -208,7 +114,7 @@ const ProjectsSection: React.FC<{projects: ProjectProps []}> = ({projects}) => {
 
                       {/* Buttons */}
                       <div className="flex space-x-2">
-                          <a href={project.links.github} target="_blank">
+                          {project.links.github.length > 0 && <a href={project.links.github} target="_blank">
                               <Button
                                   variant="outline"
                                   size="sm"
@@ -217,7 +123,7 @@ const ProjectsSection: React.FC<{projects: ProjectProps []}> = ({projects}) => {
                                   <Github className="h-3 w-3"/>
                                   <span>Code</span>
                               </Button>
-                          </a>
+                          </a>}
 
                           <a href={project.links.preview} target="_blank">
                               <Button

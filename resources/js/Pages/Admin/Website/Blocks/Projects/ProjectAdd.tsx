@@ -73,8 +73,8 @@ const ProjectAdd: React.FC<{category: string}> = ({category}) => {
         skills: z.array(z.number()).min(1, "You must choose at least one skill!"),
         libraries: z.array(z.number()).min(1, "You must choose at least one library!"),
         github: z.string()
-            .url('Invalid Github URL!')
-            .refine((val) => /^https:\/\/(www\.)?github\.com\//.test(val), {
+            // .url('Invalid Github URL!')
+            .refine((val) => (val.length === 0 || /^https:\/\/(www\.)?github\.com\//.test(val)), {
                 message: 'Github URL is invalid!',
             }),
         preview: z.string().url('Invalid URL!'),
