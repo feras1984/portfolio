@@ -59,18 +59,7 @@ const ContactSection: React.FC<{socialLinks: MenuLink [], contactLinks: MenuLink
 
             <div className="mt-8 pt-6 border-t border-border">
               <p className="text-sm text-muted-foreground mb-4">Connect with me</p>
-              {/*<div className="flex space-x-3">*/}
-              {/*  <Button variant="outline" size="icon" className="hover:text-accent transition-colors">*/}
-              {/*    <Github className="h-4 w-4" />*/}
-              {/*  </Button>*/}
-              {/*  <Button variant="outline" size="icon" className="hover:text-accent transition-colors">*/}
-              {/*    <Linkedin className="h-4 w-4" />*/}
-              {/*  </Button>*/}
-              {/*  <Button variant="outline" size="icon" className="hover:text-accent transition-colors">*/}
-              {/*    <Mail className="h-4 w-4" />*/}
-              {/*  </Button>*/}
-              {/*</div>*/}
-                <CustomLinks socialLinks={socialLinks} contactLinks={contactLinks}></CustomLinks>
+                {/*<CustomLinks socialLinks={socialLinks} contactLinks={contactLinks}></CustomLinks>*/}
             </div>
           </Card>
 

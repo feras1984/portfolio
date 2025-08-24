@@ -12,42 +12,17 @@ import ProjectsSection from "@/Pages/Site/components/ProjectsSection";
 import ContactSection from "@/Pages/Site/components/ContactSection";
 
 interface HomeProps extends LinkListProps{
-    // mainSliders: BlockProps [],
-    // services: BlockProps [],
-    // clients: BlockProps [],
-    // galleries: BlockProps [],
-    // missions: BlockProps [],
-    // about: BlockProps [],
-    // news: BlockProps [],
-    // articles: BlockProps [],
-    // industries: BlockProps [],
     aboutMe: BlockProps [],
     technologies: BlockProps [],
     projects: ProjectProps [],
 }
 const Home:React.FC<HomeProps> = ({
-                                        mainLinks,
                                         socialLinks,
-                                        footerLinks,
                                         contactLinks,
-                                        // logo,
-                                        languages,
                                         aboutMe,
                                         technologies,
                                         projects,
-                                        // mainSliders,
-                                        // services,
-                                        // clients,
-                                        // galleries,
-                                        // missions,
-                                        // about,
-                                        // news,
-                                        // articles,
-                                        // industries,
                                   }) => {
-    const dispatch = useAppDispatch();
-    const mainSliderRef = React.useRef<HTMLDivElement>(null);
-    const aboutRef = React.useRef<HTMLDivElement>(null);
 
     return(
         <Box>
