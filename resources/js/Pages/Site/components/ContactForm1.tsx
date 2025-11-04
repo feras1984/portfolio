@@ -151,11 +151,11 @@ const ContactForm1 = () => {
                         )}
                     />
 
-                    <ReCAPTCHA
-                        ref={recaptchaRef}
-                        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-                        onChange={handleRecaptcha}
-                    />
+                    {/*<ReCAPTCHA*/}
+                    {/*    ref={recaptchaRef}*/}
+                    {/*    sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}*/}
+                    {/*    onChange={handleRecaptcha}*/}
+                    {/*/>*/}
 
                     <Button
                         disabled={disable}
