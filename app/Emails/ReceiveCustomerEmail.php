@@ -19,6 +19,7 @@ class ReceiveCustomerEmail extends Mailable
     private string $name;
     private string $email;
     private string $message;
+    
 
     /**
      * Create a new message instance.
