@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39d6efff-c51e-4550-b22c-2709828e79cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "sprint",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/PROJECTS/Portfolio/portfolio",
+    "last_opened_file_path": "D:/PROJECTS/BinTerki/GITHUB/palace",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -211,6 +211,9 @@
     <configuration name="Main" type="PestRunConfigurationType">
       <option name="pestRunnerSettings">
         <PestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
+      </option>
+      <option name="runnerSettings">
+        <PhpTestRunnerSettings configuration_file="$PROJECT_DIR$/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
       </option>
       <method v="2" />
     </configuration>
@@ -253,6 +256,7 @@
       <workItem from="1762252887103" duration="5438000" />
       <workItem from="1762262410665" duration="23000" />
       <workItem from="1763444478882" duration="251000" />
+      <workItem from="1768510717922" duration="3304000" />
     </task>
     <servers />
   </component>
